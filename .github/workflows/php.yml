@@ -23,7 +23,7 @@ jobs:
 
     steps:
     - name: build docker image and push to hub
-      uses: docker/build-push-action@v4
+      uses: mr-smithers-excellent/docker-build-push@v6
       with: 
           image: compilereg/iticgi
           registry: docker.io
