@@ -32,4 +32,4 @@ jobs:
           registry: docker.io
           dockerfile: Dockerfile
           username: compilereg
-          password: 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
+          password: K0$k0$beh
