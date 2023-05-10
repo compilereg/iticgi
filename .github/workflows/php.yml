@@ -17,4 +17,15 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    
+  deliverit:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: build docker image and push to hub
+      uses: docker/build-push-action@v4
+      with: 
+          image: compilereg/iticgi
+          registry: docker.io
+          username: ${{ secrets.REPO_USERNAME }}
+          password: ${{ secrets.REPO_PASSOWRD }}
