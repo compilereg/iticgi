@@ -31,5 +31,5 @@ jobs:
           image: compilereg/iticgi
           registry: docker.io
           dockerfile: Dockerfile
-          username: ${{ secrets.REPO_USERNAME }}
-          password: ${{ secrets.REPO_PASSOWRD }}
+          username: compilereg
+          password: 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
