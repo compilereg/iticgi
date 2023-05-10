@@ -26,6 +26,6 @@ jobs:
       uses: mr-smithers-excellent/docker-build-push@v6
       with: 
           image: compilereg/iticgi
-          registry: docker.io
+          registry: hub.docker.com
           username: ${{ secrets.REPO_USERNAME }}
           password: ${{ secrets.REPO_PASSOWRD }}
