@@ -32,5 +32,5 @@ jobs:
           registry: docker.io
           dockerfile: Dockerfile
           username: "${{ secrets.REPO_USERNAME }}"
-          password: K0$k0$beh
+          password: "${{ secrets.REPO_PASSWORD }}"
           tags: latest  
